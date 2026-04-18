@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXORA — Digital Innovation Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+  <div class="cursor-dot" id="cDot"></div>
+  <div class="cursor-ring" id="cRing"></div>
+
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#hero" onclick="closeMobile()">Home</a>
+    <a href="#services" onclick="closeMobile()">Services</a>
+    <a href="#work" onclick="closeMobile()">Work</a>
+    <a href="#team" onclick="closeMobile()">Team</a>
+    <a href="#pricing" onclick="closeMobile()">Pricing</a>
+    <a href="#contact" onclick="closeMobile()">Contact</a>
+  </div>
+
+
+  <nav id="mainNav">
+    <a href="#hero" class="nav-logo">NEXORA</a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+        <div class="theme-knob" id="themeKnob">☀️</div>
+      </button>
+      <a href="#contact" class="nav-cta">Get Started →</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="grid-overlay"></div>
+    <div class="hero-floats">
+      <div class="float-orb fo1"></div>
+      <div class="float-orb fo2"></div>
+      <div class="float-orb fo3"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Now Accepting New Projects for 2025
+      </div>
+      <h1 class="hero-h1">
+        We Build<br>
+        <span class="grad-text">Digital</span><br>
+        Futures.
+      </h1>
+      <p class="hero-sub">
+        Nexora is a full-service digital innovation agency. We design, build, and scale world-class products that move
+        businesses forward.
+      </p>
+      <div class="hero-actions">
+        <a href="#work" class="btn-grad">
+          <span>Explore Our Work</span>
+          <span>→</span>
+        </a>
+        <a href="#contact" class="btn-outline">
+          <span>Start a Project</span>
+        </a>
+      </div>
+    </div>
+
+
+    <div class="hero-visual">
+      <div class="hero-card">
+        <div class="hcard-header">
+          <div class="hcard-avatar">📊</div>
+          <div>
+            <div class="hcard-title">Analytics Dashboard</div>
+            <div class="hcard-sub">Live Performance Overview</div>
+          </div>
+        </div>
+        <div class="metric-row">
+          <div class="metric-box">
+            <div class="metric-val" id="heroM1">0</div>
+            <div class="metric-lbl">Revenue</div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-val" id="heroM2">0%</div>
+            <div class="metric-lbl">Growth</div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-val" id="heroM3">0</div>
+            <div class="metric-lbl">Users</div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-val" id="heroM4">0</div>
+            <div class="metric-lbl">Projects</div>
+          </div>
+        </div>
+        <div class="sparkbar" id="sparkbar"></div>
+        <div class="hcard-footer">
+          <div class="status-pill">
+            <span>●</span> All systems operational
+          </div>
+          <span style="font-size:0.7rem;color:var(--text3)">Live</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="marquee-section">
+    <div class="marquee-track" id="marqueeTrack"></div>
+  </div>
+
+  <section id="stats">
+    <div class="stats-grid">
+      <div class="stat-card reveal">
+        <div class="stat-num" data-target="97" data-suffix="+">0+</div>
+        <div class="stat-label">Projects Delivered</div>
+        <div class="stat-sub">Across 30+ industries</div>
+      </div>
+      <div class="stat-card reveal delay-1">
+        <div class="stat-num" data-target="98" data-suffix="%">0%</div>
+        <div class="stat-label">Client Satisfaction</div>
+        <div class="stat-sub">Based on 500+ reviews</div>
+      </div>
+      <div class="stat-card reveal delay-2">
+        <div class="stat-num" data-target="12" data-suffix="M+">0M+</div>
+        <div class="stat-label">Users Reached</div>
+        <div class="stat-sub">Globally across products</div>
+      </div>
+      <div class="stat-card reveal delay-3">
+        <div class="stat-num" data-target="8" data-suffix=" Yrs">0 Yrs</div>
+        <div class="stat-label">Industry Experience</div>
+        <div class="stat-sub">Founded in Cairo, 2017</div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="services">
+    <div class="section-header">
+      <div class="reveal-left">
+        <div class="section-tag">What We Do</div>
+        <h2 class="section-title">Services That<br><span
+            style="background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Scale.</span>
+        </h2>
+      </div>
+      <div class="reveal-right" style="align-self:end">
+        <p class="section-sub">From concept to launch, we offer end-to-end digital solutions tailored to ambitious
+          businesses ready to lead their market.</p>
+        <a href="#contact"
+          style="display:inline-flex;align-items:center;gap:0.5rem;font-size:0.83rem;font-weight:500;color:var(--accent);margin-top:1.5rem">View
+          all services <span>→</span></a>
+      </div>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal delay-1">
+        <div class="svc-icon">🎨</div>
+        <div class="svc-title">UI/UX Design</div>
+        <div class="svc-desc">We craft intuitive, visually stunning interfaces that convert visitors into loyal
+          customers through research-backed design systems.</div>
+        <div class="svc-tags">
+          <span class="svc-tag">Figma</span>
+          <span class="svc-tag">Design Systems</span>
+          <span class="svc-tag">Prototyping</span>
+          <span class="svc-tag">User Research</span>
+        </div>
+        <div class="svc-arrow">↗</div>
+      </div>
+      <div class="service-card reveal delay-2">
+        <div class="svc-icon">⚡</div>
+        <div class="svc-title">Web Development</div>
+        <div class="svc-desc">Lightning-fast, SEO-optimized web applications built with modern frameworks</div>
+        <div class="svc-tags">
+          <span class="svc-tag">React</span>
+          <span class="svc-tag">Next.js</span>
+          <span class="svc-tag">Node.js</span>
+          <span class="svc-tag">TypeScript</span>
+        </div>
+        <div class="svc-arrow">↗</div>
+      </div>
+      <div class="service-card reveal delay-3">
+        <div class="svc-icon">📱</div>
+        <div class="svc-title">Mobile Apps</div>
+        <div class="svc-desc">Native and cross-platform mobile experiences that users love. iOS and Android development
+          with seamless, fluid interactions.</div>
+        <div class="svc-tags">
+          <span class="svc-tag">React Native</span>
+          <span class="svc-tag">Flutter</span>
+          <span class="svc-tag">iOS</span>
+          <span class="svc-tag">Android</span>
+        </div>
+        <div class="svc-arrow">↗</div>
+      </div>
+      <div class="service-card reveal delay-1">
+        <div class="svc-icon">☁️</div>
+        <div class="svc-title">Cloud & DevOps</div>
+        <div class="svc-desc">Robust infrastructure, CI/CD pipelines, and cloud architecture that keep your systems
+          running at peak performance.</div>
+        <div class="svc-tags">
+          <span class="svc-tag">AWS</span>
+          <span class="svc-tag">Docker</span>
+          <span class="svc-tag">Kubernetes</span>
+          <span class="svc-tag">CI/CD</span>
+        </div>
+        <div class="svc-arrow">↗</div>
+      </div>
+      <div class="service-card reveal delay-2">
+        <div class="svc-icon">🤖</div>
+        <div class="svc-title">AI & Machine Learning</div>
+        <div class="svc-desc">Integrate intelligent automation, predictive analytics, and cutting-edge AI features that
+          give your product an unfair advantage.</div>
+        <div class="svc-tags">
+          <span class="svc-tag">OpenAI</span>
+          <span class="svc-tag">LangChain</span>
+          <span class="svc-tag">TensorFlow</span>
+          <span class="svc-tag">RAG</span>
+        </div>
+        <div class="svc-arrow">↗</div>
+      </div>
+      <div class="service-card reveal delay-3">
+        <div class="svc-icon">📈</div>
+        <div class="svc-title">Digital Marketing</div>
+        <div class="svc-desc">Data-driven marketing strategies, SEO domination, and performance campaigns that deliver
+          measurable growth and ROI.</div>
+        <div class="svc-tags">
+          <span class="svc-tag">SEO</span>
+          <span class="svc-tag">Google Ads</span>
+          <span class="svc-tag">Analytics</span>
+          <span class="svc-tag">Content</span>
+        </div>
+        <div class="svc-arrow">↗</div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="process">
+    <div style="text-align:center;max-width:600px;margin:0 auto;position:relative;z-index:1">
+      <div class="section-tag reveal" style="justify-content:center">How We Work</div>
+      <h2 class="section-title reveal">Our Proven Process</h2>
+      <p class="section-sub reveal" style="margin:0 auto">Every project follows our battle-tested framework that
+        consistently delivers exceptional results on time and on budget.</p>
+    </div>
+    <div class="process-steps" style="position:relative;z-index:1">
+      <div class="process-step reveal delay-1">
+        <div class="step-num">01</div>
+        <div class="step-title">Discovery & Strategy</div>
+        <div class="step-desc">We deep-dive into your business, users, and market to define a crystal-clear strategy and
+          project scope.</div>
+      </div>
+      <div class="process-step reveal delay-2">
+        <div class="step-num">02</div>
+        <div class="step-title">Design & Prototyping</div>
+        <div class="step-desc">Our designers create interactive prototypes, tested and refined until the experience
+          feels exactly right.</div>
+      </div>
+      <div class="process-step reveal delay-3">
+        <div class="step-num">03</div>
+        <div class="step-title">Build & Integrate</div>
+        <div class="step-desc">Engineers bring the designs to life with clean, scalable code following best practices
+          and rigorous QA.</div>
+      </div>
+      <div class="process-step reveal delay-4">
+        <div class="step-num">04</div>
+        <div class="step-title">Launch & Scale</div>
+        <div class="step-desc">We handle deployment, monitoring, and continuous improvement — your growth is our
+          success.</div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="work">
+    <div class="section-header">
+      <div class="reveal-left">
+        <div class="section-tag">Portfolio</div>
+        <h2 class="section-title">Work We're<br><span
+            style="background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Proud
+            Of.</span></h2>
+      </div>
+      <div class="reveal-right" style="align-self:end">
+        <p class="section-sub">A selection of projects that showcase our range, craft, and commitment to excellence.</p>
+      </div>
+    </div>
+    <div class="work-filters reveal">
+      <button class="filter-btn active" onclick="filterWork('all',this)">All</button>
+      <button class="filter-btn" onclick="filterWork('web',this)">Web Apps</button>
+      <button class="filter-btn" onclick="filterWork('mobile',this)">Mobile</button>
+      <button class="filter-btn" onclick="filterWork('design',this)">Design</button>
+      <button class="filter-btn" onclick="filterWork('ai',this)">AI/ML</button>
+    </div>
+    <div class="work-grid" id="workGrid">
+      <div class="work-card large reveal delay-1" data-cat="web">
+        <div class="wcard-img">
+          <div class="wcard-bg" style="background:linear-gradient(135deg,rgba(108,99,255,0.2),rgba(56,189,248,0.1))">🏦
+          </div>
+          <div class="wcard-overlay">↗</div>
+        </div>
+        <div class="wcard-body">
+          <div class="wcard-cat">FinTech · Web App</div>
+          <div class="wcard-title">PayFlow — Banking Platform</div>
+          <div class="wcard-desc">A next-gen digital banking experience serving 2M+ users with real-time transactions,
+            AI insights, and beautiful data visualizations.</div>
+          <div class="wcard-tech"><span class="tech-pill">React</span><span class="tech-pill">Node.js</span><span
+              class="tech-pill">PostgreSQL</span><span class="tech-pill">AWS</span></div>
+        </div>
+      </div>
+      <div class="work-card small reveal delay-2" data-cat="mobile">
+        <div class="wcard-img">
+          <div class="wcard-bg" style="background:linear-gradient(135deg,rgba(56,189,248,0.2),rgba(108,99,255,0.1))">🏃
+          </div>
+          <div class="wcard-overlay">↗</div>
+        </div>
+        <div class="wcard-body">
+          <div class="wcard-cat">Health · Mobile App</div>
+          <div class="wcard-title">FitCore — Fitness Tracker</div>
+          <div class="wcard-desc">AI-powered workout planning and health monitoring app with 500K+ downloads and 4.9★
+            rating.</div>
+          <div class="wcard-tech"><span class="tech-pill">Flutter</span><span class="tech-pill">Firebase</span><span
+              class="tech-pill">ML Kit</span></div>
+        </div>
+      </div>
+      <div class="work-card med reveal delay-1" data-cat="design">
+        <div class="wcard-img">
+          <div class="wcard-bg" style="background:linear-gradient(135deg,rgba(167,139,250,0.2),rgba(108,99,255,0.1))">🛒
+          </div>
+          <div class="wcard-overlay">↗</div>
+        </div>
+        <div class="wcard-body">
+          <div class="wcard-cat">eCommerce · Design System</div>
+          <div class="wcard-title">LuxBrand — Design System</div>
+          <div class="wcard-desc">Complete brand identity and design system for a luxury fashion brand, increasing
+            conversion by 40%.</div>
+          <div class="wcard-tech"><span class="tech-pill">Figma</span><span class="tech-pill">Shopify</span><span
+              class="tech-pill">Next.js</span></div>
+        </div>
+      </div>
+      <div class="work-card med reveal delay-2" data-cat="ai">
+        <div class="wcard-img">
+          <div class="wcard-bg" style="background:linear-gradient(135deg,rgba(56,189,248,0.2),rgba(167,139,250,0.1))">🤖
+          </div>
+          <div class="wcard-overlay">↗</div>
+        </div>
+        <div class="wcard-body">
+          <div class="wcard-cat">AI/ML · SaaS</div>
+          <div class="wcard-title">ContentAI — Copy Generator</div>
+          <div class="wcard-desc">Enterprise AI writing assistant with custom fine-tuning, 10,000+ business subscribers
+            and $2M ARR.</div>
+          <div class="wcard-tech"><span class="tech-pill">OpenAI</span><span class="tech-pill">LangChain</span><span
+              class="tech-pill">Python</span></div>
+        </div>
+      </div>
+      <div class="work-card small reveal delay-3" data-cat="web">
+        <div class="wcard-img">
+          <div class="wcard-bg" style="background:linear-gradient(135deg,rgba(108,99,255,0.15),rgba(56,189,248,0.15))">
+            🏥</div>
+          <div class="wcard-overlay">↗</div>
+        </div>
+        <div class="wcard-body">
+          <div class="wcard-cat">HealthTech · Platform</div>
+          <div class="wcard-title">MediConnect Portal</div>
+          <div class="wcard-desc">HIPAA-compliant telemedicine platform connecting 50K patients to doctors nationwide.
+          </div>
+          <div class="wcard-tech"><span class="tech-pill">Vue.js</span><span class="tech-pill">FastAPI</span><span
+              class="tech-pill">Docker</span></div>
+        </div>
+      </div>
+      <div class="work-card large reveal delay-1" data-cat="mobile">
+        <div class="wcard-img">
+          <div class="wcard-bg" style="background:linear-gradient(135deg,rgba(56,189,248,0.15),rgba(108,99,255,0.2))">
+            🏘️</div>
+          <div class="wcard-overlay">↗</div>
+        </div>
+        <div class="wcard-body">
+          <div class="wcard-cat">PropTech · Mobile + Web</div>
+          <div class="wcard-title">HomeFind — Real Estate App</div>
+          <div class="wcard-desc">AI-powered property search with AR virtual tours, price predictions, and mortgage
+            calculator. 1M+ downloads across iOS and Android.</div>
+          <div class="wcard-tech"><span class="tech-pill">React Native</span><span class="tech-pill">ARKit</span><span
+              class="tech-pill">GraphQL</span><span class="tech-pill">Redis</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="pricing">
+    <div style="text-align:center;max-width:600px;margin:0 auto">
+      <div class="section-tag reveal" style="justify-content:center">Transparent Pricing</div>
+      <h2 class="section-title reveal">Simple Plans,</h2>
+      <div class="pricing-toggle reveal" style="justify-content:center">
+        <span style="color:var(--text2)">Monthly</span>
+        <div class="toggle-track" id="pricingToggle" onclick="togglePricing(this)">
+          <div class="toggle-knob"></div>
+        </div>
+        <span style="color:var(--text2)">Annual</span>
+        <!-- <span class="price-save">Save 20%</span> -->
+      </div>
+    </div>
+    <div class="pricing-grid" style="margin-top:3rem">
+      <div class="price-card reveal delay-1">
+        <div class="price-plan">Starter</div>
+        <div class="price-val" data-monthly="$100" data-annual="$200">$200<span>/mo</span></div>
+        <div class="price-period">Best for MVPs & small businesses</div>
+        <div class="price-divider"></div>
+        <div class="price-features">
+          <div class="price-feature">
+            <div class="check">✓</div> Up to 5 pages / screens
+          </div>
+          <div class="price-feature">
+            <div class="check">✓</div> UI/UX Design included
+          </div>
+          <div class="price-feature">
+            <div class="check">✓</div> Mobile responsive
+          </div>
+          <div class="price-feature">
+            <div class="check">✓</div> Basic SEO setup
+          </div>
+          <div class="price-feature">
+            <div class="check">✓</div> 1 month support
+          </div>
+          <div class="price-feature inactive">
+            <div class="check">✗</div> Custom integrations
+          </div>
+          <div class="price-feature inactive">
+            <div class="check">✗</div> Dedicated manager
+          </div>
+        </div>
+        <a href="#contact" class="btn-price btn-price-outline">Get Started →</a>
+      </div>
+      <div class="price-card featured reveal delay-2">
+        <div class="price-badge">Most Popular</div>
+        <div class="price-plan">Growth</div>
+        <div class="price-val" data-monthly="$300" data-annual="$400">$500<span>/mo</span></div>
+        <div class="price-period">Best for scaling startups</div>
+        <div class="price-divider"></div>
+        <div class="price-features">
+          <div class="price-feature">
+            <div class="check">✓</div> Unlimited pages / screens
+          </div>
+          <div class="price-feature">
+            <div class="check">✓</div> Full UI/UX Design system
+          </div>
+          <div class="price-feature">
+            <div class="check">✓</div> Custom integrations (API)
+          </div>
+          <div class="price-feature">
+            <div class="check">✓</div> Advanced SEO & Analytics
+          </div>
+          <div class="price-feature">
+            <div class="check">✓</div> 3 months priority support
+          </div>
+          <div class="price-feature">
+            <div class="check">✓</div> Dedicated project manager
+          </div>
+          <div class="price-feature inactive">
+            <div class="check">✗</div> AI feature development
+          </div>
+        </div>
+        <a href="#contact" class="btn-price btn-price-grad">Get Started →</a>
+      </div>
+      <div class="price-card reveal delay-3">
+        <div class="price-plan">Enterprise</div>
+        <div class="price-val" data-monthly="Free" data-annual="Cus">Cus<span></span></div>
+        <div class="price-period">For complex, large-scale products</div>
+        <div class="price-divider"></div>
+        <div class="price-features">
+          <div class="price-feature">
+            <div class="check">✓</div> Everything in Growth
+          </div>
+          <div class="price-feature">
+            <div class="check">✓</div> AI/ML feature development
+          </div>
+          <div class="price-feature">
+            <div class="check">✓</div> White-label solutions
+          </div>
+          <div class="price-feature">
+            <div class="check">✓</div> SLA & uptime guarantees
+          </div>
+          <div class="price-feature">
+            <div class="check">✓</div> 12 months ongoing support
+          </div>
+          <div class="price-feature">
+            <div class="check">✓</div> Dedicated engineering team
+          </div>
+          <div class="price-feature">
+            <div class="check">✓</div> On-site workshops
+          </div>
+        </div>
+        <a href="#contact" class="btn-price btn-price-outline">Talk to Sales →</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="team">
+    <div class="section-header">
+      <div class="reveal-left">
+        <div class="section-tag">The Team</div>
+        <h2 class="section-title">Meet the<br><span
+            style="background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Minds
+            Behind</span><br>the Magic.</h2>
+      </div>
+      <div class="reveal-right" style="align-self:end">
+        <p class="section-sub">A diverse team of world-class designers, engineers, and strategists united by a passion
+          for building exceptional products.</p>
+      </div>
+    </div>
+    <div class="team-grid">
+      <div class="team-card reveal delay-1">
+        <div class="team-photo" style="background:linear-gradient(135deg,rgba(108,99,255,0.2),rgba(56,189,248,0.1))">
+          👨‍💻</div>
+        <div class="team-body">
+          <div class="team-name">Ahmed Hassan</div>
+          <div class="team-role">Founder & CEO</div>
+          <div class="team-bio">10+ years building digital products. Former Google engineer. Obsessed with quality and
+            scale.</div>
+          <div class="team-socials">
+            <div class="tsocial">𝕏</div>
+            <div class="tsocial">in</div>
+            <div class="tsocial">gh</div>
+          </div>
+        </div>
+      </div>
+      <div class="team-card reveal delay-2">
+        <div class="team-photo" style="background:linear-gradient(135deg,rgba(56,189,248,0.2),rgba(108,99,255,0.1))">
+          👩‍🎨</div>
+        <div class="team-body">
+          <div class="team-name">Sara Mostafa</div>
+          <div class="team-role">Head of Design</div>
+          <div class="team-bio">Award-winning designer with 8 years crafting brands and experiences for Fortune 500
+            companies.</div>
+          <div class="team-socials">
+            <div class="tsocial">𝕏</div>
+            <div class="tsocial">in</div>
+            <div class="tsocial">🎨</div>
+          </div>
+        </div>
+      </div>
+      <div class="team-card reveal delay-3">
+        <div class="team-photo" style="background:linear-gradient(135deg,rgba(167,139,250,0.2),rgba(108,99,255,0.1))">
+          👨‍🔬</div>
+        <div class="team-body">
+          <div class="team-name">Omar Fathy</div>
+          <div class="team-role">CTO & Lead Engineer</div>
+          <div class="team-bio">Full-stack wizard, cloud architect, and open source contributor. Built systems serving
+            10M+ users.</div>
+          <div class="team-socials">
+            <div class="tsocial">𝕏</div>
+            <div class="tsocial">in</div>
+            <div class="tsocial">gh</div>
+          </div>
+        </div>
+      </div>
+      <div class="team-card reveal delay-4">
+        <div class="team-photo" style="background:linear-gradient(135deg,rgba(108,99,255,0.15),rgba(56,189,248,0.2))">
+          👩‍💼</div>
+        <div class="team-body">
+          <div class="team-name">Nour Ibrahim</div>
+          <div class="team-role">Head of Strategy</div>
+          <div class="team-bio">MBA from AUC. Specializes in digital transformation strategy for enterprises across MENA
+            region.</div>
+          <div class="team-socials">
+            <div class="tsocial">𝕏</div>
+            <div class="tsocial">in</div>
+            <div class="tsocial">📊</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="faq">
+    <div style="margin-bottom:0">
+      <div class="section-tag reveal">FAQ</div>
+      <h2 class="section-title reveal">Got Questions?<br><span
+          style="background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">We've
+          Got Answers.</span></h2>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-list">
+        <div class="faq-item reveal" onclick="toggleFAQ(this)">
+          <div class="faq-q">How long does a typical project take?<div class="faq-icon">+</div>
+          </div>
+          <div class="faq-a">Project timelines vary based on complexity. A simple landing page takes 2–3 weeks, a full
+            web application 2–4 months, and enterprise products 4–8 months. We always provide detailed timelines
+            upfront.</div>
+        </div>
+        <div class="faq-item reveal delay-1" onclick="toggleFAQ(this)">
+          <div class="faq-q">What's your development process?<div class="faq-icon">+</div>
+          </div>
+          <div class="faq-a">We follow an agile methodology with weekly sprints and client check-ins. You'll always know
+            what we're working on, with access to a live staging environment throughout development.</div>
+        </div>
+        <div class="faq-item reveal delay-2" onclick="toggleFAQ(this)">
+          <div class="faq-q">Do you work with early-stage startups?<div class="faq-icon">+</div>
+          </div>
+          <div class="faq-a">Absolutely. We love working with startups and often offer equity-for-services arrangements
+            for exceptional ideas. Book a free call and let's discuss what's right for your stage.</div>
+        </div>
+        <div class="faq-item reveal delay-3" onclick="toggleFAQ(this)">
+          <div class="faq-q">What happens after launch?<div class="faq-icon">+</div>
+          </div>
+          <div class="faq-a">All plans include a post-launch support period. We also offer ongoing maintenance
+            retainers, feature development, and growth partnerships. We're invested in your long-term success.</div>
+        </div>
+        <div class="faq-item reveal delay-4" onclick="toggleFAQ(this)">
+          <div class="faq-q">Do you sign NDAs?<div class="faq-icon">+</div>
+          </div>
+          <div class="faq-a">Yes, always. We take confidentiality extremely seriously and are happy to sign your NDA
+            before any discussions about your project begin.</div>
+        </div>
+        <div class="faq-item reveal delay-5" onclick="toggleFAQ(this)">
+          <div class="faq-q">Can you work with our existing codebase?<div class="faq-icon">+</div>
+          </div>
+          <div class="faq-a">Yes. Our senior engineers are experienced at onboarding onto existing systems, refactoring
+            legacy code, and adding new features without breaking what already works.</div>
+        </div>
+      </div>
+      <div class="faq-visual reveal-right">
+        <div class="faq-box">
+          <h3 style="font-family:'Syne',sans-serif;font-weight:700;font-size:1.2rem;margin-bottom:0.5rem">Still not
+            sure?</h3>
+          <p style="font-size:0.83rem;color:var(--text2);line-height:1.7;font-weight:300">Book a free 30-minute strategy
+            session with our team. No sales pitch — just honest advice for your specific situation.</p>
+          <a href="#contact" class="btn-grad" style="width:fit-content;font-size:0.8rem;padding:0.75rem 1.5rem">Book
+            Free Call →</a>
+          <div style="height:1px;background:var(--border)"></div>
+          <div class="faq-stat">
+            <div class="fstat-icon">⚡</div>
+            <div>
+              <div class="fstat-val">24hr</div>
+              <div class="fstat-lbl">Average response time</div>
+            </div>
+          </div>
+          <div class="faq-stat">
+            <div class="fstat-icon">🏆</div>
+            <div>
+              <div class="fstat-val">Top 1%</div>
+              <div class="fstat-lbl">Clutch-rated agency</div>
+            </div>
+          </div>
+          <div class="faq-stat">
+            <div class="fstat-icon">🌍</div>
+            <div>
+              <div class="fstat-val">30+</div>
+              <div class="fstat-lbl">Countries served</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="newsletter">
+    <div class="nl-inner">
+      <h2 class="nl-title reveal">Stay Ahead of<br>the Curve.</h2>
+      <p class="nl-sub reveal">Get weekly insights on digital trends, design inspiration, and tech strategies delivered
+        to your inbox. Join 12,000+ innovators.</p>
+      <div class="nl-form reveal">
+        <input class="nl-input" type="email" placeholder="your@email.com" id="nlEmail">
+        <button class="nl-btn" onclick="subscribeNL()">Subscribe →</button>
+      </div>
+      <p id="nlMsg" style="margin-top:1rem;font-size:0.78rem;color:var(--accent);display:none;text-align:center">🎉
+        You're in! Check your inbox for a welcome gift.</p>
+    </div>
+  </section>
+
+
+  <section id="contact">
+    <div style="text-align:center;max-width:600px;margin:0 auto;position:relative;z-index:1">
+      <div class="section-tag reveal" style="justify-content:center">Contact Us</div>
+      <h2 class="section-title reveal">Let's Build<br><span
+          style="background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Something
+          Great</span><br>Together.</h2>
+      <p class="section-sub reveal" style="margin:0 auto">Ready to start your project? We respond to every inquiry
+        within 24 hours.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item reveal delay-1">
+          <div class="citem-icon">📧</div>
+          <div>
+            <div class="citem-label">Email Us</div>
+            <div class="citem-value"><a href="mailto:ah.wa.ah12@gmail.com">ah.wa.ah12@gmail.com</a></div>
+          </div>
+        </div>
+        <div class="contact-item reveal delay-2">
+          <div class="citem-icon">📞</div>
+          <div>
+            <div class="citem-label">Call Us</div>
+            <div class="citem-value"><a
+                href="https://wa.me/201023046551?text=مرحبا%20اريد%20الاستفسار%20عن%20الخدمة">+201023046551</a></div>
+          </div>
+        </div>
+        <div class="contact-item reveal delay-3">
+          <div class="citem-icon">📍</div>
+          <div>
+            <div class="citem-label">Visit Us</div>
+            <div class="citem-value">Egypt , New Minya</div>
+          </div>
+        </div>
+        <div class="contact-item reveal delay-4">
+          <div class="citem-icon">⏰</div>
+          <div>
+            <div class="citem-label">Working Hours</div>
+            <div class="citem-value">Sun–Thu, 9am–6pm EET</div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form reveal-right">
+        <div id="formSuccess" class="form-success">
+          <div style="font-size:3rem;margin-bottom:1rem">🎉</div>
+          <div>Message received!</div>
+          <p style="font-size:0.82rem;color:var(--text2);margin-top:0.5rem;font-weight:300">We'll get back to you within
+            24 hours.</p>
+        </div>
+        <form action="">
+          <div id="formBody">
+            <div class="form-row">
+              <div class="form-group">
+                <label>First Name</label>
+                <input type="text" placeholder="First Name" id="fname">
+              </div>
+              <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" placeholder="Second Name" id="lname">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" placeholder="ahmed@company.com" id="cemail">
+            </div>
+            <div class="form-group">
+              <label>Service Needed</label>
+              <select id="cservice">
+                <option value="">Select a service...</option>
+                <option>UI/UX Design</option>
+                <option>Web Development</option>
+                <option>Mobile App</option>
+                <option>AI/ML Development</option>
+                <option>Cloud & DevOps</option>
+                <option>Digital Marketing</option>
+                <option>Full Project</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Tell us about your project</label>
+              <textarea placeholder="Describe your project, goals, timeline, and budget..."></textarea>
+            </div>
+            <button class="form-submit" onclick="submitForm()">
+              <span>Send Message</span>
+              <span>→</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#hero" class="nav-logo">NEXORA</a>
+        <p>We build digital products that move businesses forward. Based in Cairo, working globally with ambitious teams
+          around the world.</p>
+        <div class="footer-socials">
+          <a class="fsocial" href="#">𝕏</a>
+          <a class="fsocial" href="#">in</a>
+          <a class="fsocial" href="#">gh</a>
+          <a class="fsocial" href="#">dr</a>
+          <a class="fsocial" href="#">yt</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">UI/UX Design</a></li>
+          <li><a href="#">Web Development</a></li>
+          <li><a href="#">Mobile Apps</a></li>
+          <li><a href="#">AI/ML Solutions</a></li>
+          <li><a href="#">Cloud & DevOps</a></li>
+          <li><a href="#">Digital Marketing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Careers <span
+                style="font-size:0.6rem;color:var(--accent);border:1px solid;padding:1px 4px;border-radius:3px">3
+                open</span></a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Press Kit</a></li>
+          <li><a href="#">Partners</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Case Studies</a></li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Nexora Agency. Made with ❤️ in Minya, By <a href="https://ahmedwalid96.netlify.app/" style="color: blue;font-weight: 900;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;letter-spacing: 1.1px;">Ahmed Walid</a>.</p>
+      <div class="footer-badges">
+        <span class="fbadge">ISO 27001</span>
+        <span class="fbadge">GDPR Ready</span>
+        <span class="fbadge">SOC 2</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="mail.js"></script>
+</body>
+</html>
